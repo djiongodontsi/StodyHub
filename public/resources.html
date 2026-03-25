@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ressources - StudyHub</title>
+  <link rel="icon" href="/assets/logo_icon.png">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="/index.html" aria-label="StudyHub">
+      <img src="/assets/logo_icon.png" alt="Logo StudyHub">
+      <span>StudyHub</span>
+    </a>
+    <nav>
+      <a href="/index.html">Accueil</a>
+      <a href="/resources.html">Ressources</a>
+      <a href="/forum.html">Forum</a>
+      <a href="/profile.html">Profil</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <h1>Ressources de cours</h1>
+  <p>Un catalogue simple pour retrouver rapidement tes supports, cheatsheets et exercices.</p>
+</section>
+
+<section class="grid">
+  <div style="display:flex; flex-direction:column; gap:16px;">
+    <div class="card">
+      <h2>Catalogue</h2>
+      <p>Filtre par module et type de ressource.</p>
+      <div class="form-row" style="margin-top:14px;">
+        <div>
+          <label class="small">Module</label>
+          <select id="mod">
+            <option value="all">Tous</option>
+            <option>HTML/CSS</option>
+            <option>JavaScript</option>
+            <option>Reseau</option>
+            <option>Linux</option>
+            <option>Base de donnees</option>
+          </select>
+        </div>
+        <div>
+          <label class="small">Type</label>
+          <select id="type">
+            <option value="all">Tous</option>
+            <option>PDF</option>
+            <option>Cheatsheet</option>
+            <option>Video</option>
+            <option>Exercices</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn" id="apply">Filtrer</button>
+        <span class="small" id="count"></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Liste</h2>
+      <div id="resList" style="display:flex; flex-direction:column; gap:10px; margin-top:10px;"></div>
+    </div>
+  </div>
+
+  <aside class="card">
+    <h2>Favoris</h2>
+    <p>Marque les ressources importantes pour reviser plus vite.</p>
+    <ul class="list" id="favList"></ul>
+    <hr>
+    <div class="small">Les favoris sont gardes dans ton navigateur (localStorage).</div>
+  </aside>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2026 StudyHub - CampusConnect. Plateforme etudiante (maquette atelier EPSI).</div>
+  </div>
+</footer>
+
+<script src="/app.js"></script>
+<script src="/resources.js"></script>
+</body>
+</html>

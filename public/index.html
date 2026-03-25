@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accueil - StudyHub</title>
+  <link rel="icon" href="/assets/logo_icon.png">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="/index.html" aria-label="StudyHub">
+      <img src="/assets/logo_icon.png" alt="Logo StudyHub">
+      <span>StudyHub</span>
+    </a>
+    <nav>
+      <a href="/index.html">Accueil</a>
+      <a href="/resources.html">Ressources</a>
+      <a href="/forum.html">Forum</a>
+      <a href="/profile.html">Profil</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <h1>Tout ton campus, au meme endroit.</h1>
+  <p>StudyHub regroupe agenda, ressources et entraide pour que tu passes moins de temps a chercher, et plus de temps a avancer.</p>
+  <div style="display:flex; gap:12px; flex-wrap:wrap;">
+    <a class="btn" href="/resources.html">Acceder aux ressources</a>
+    <a class="btn secondary" href="/forum.html">Poser une question</a>
+  </div>
+</section>
+
+<section class="grid">
+  <div style="display:flex; flex-direction:column; gap:16px;">
+    <div class="card">
+      <h2>Ton agenda du jour</h2>
+      <p>Cours, deadlines et rappels. Synchronise tes projets et vois les priorites en un coup d'oeil.</p>
+      <div class="row">
+        <span class="badge">Aujourd'hui</span>
+        <span class="small">TP Web 14:00 • Rendu mini-projet 18:00</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Dernieres annonces</h2>
+      <p>Infos ecole, changements de salles, nouveaux supports de cours et opportunites de stage.</p>
+      <ul class="list">
+        <li>Nouvelle fiche Linux: permissions + chmod (PDF)</li>
+        <li>Changement salle: reseau passe en B-203</li>
+        <li>Evenement: hackathon campus vendredi</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Acces rapide</h2>
+      <p>Ressources de cours • Forum d'entraide • Evenements • Profil</p>
+      <div class="row">
+        <a class="btn" href="/resources.html">Voir les cours</a>
+        <a class="btn secondary" href="/forum.html">Forum</a>
+      </div>
+    </div>
+  </div>
+
+  <aside class="card">
+    <h2>A venir</h2>
+    <div class="kpi">
+      <div class="item"><b>Aujourd'hui</b><div>TP Web - 14:00</div></div>
+      <div class="item"><b>Demain</b><div>Rendu projet - 18:00</div></div>
+      <div class="item"><b>Semaine</b><div>Hackathon campus</div></div>
+    </div>
+    <hr>
+    <div class="small">Astuce: ajoute tes documents preferes en favoris dans Ressources.</div>
+  </aside>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2026 StudyHub - CampusConnect. Plateforme etudiante (maquette atelier EPSI).</div>
+  </div>
+</footer>
+
+<script src="/app.js"></script>
+
+</body>
+</html>

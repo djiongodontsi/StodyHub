@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forum - StudyHub</title>
+  <link rel="icon" href="/assets/logo_icon.png">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="/index.html" aria-label="StudyHub">
+      <img src="/assets/logo_icon.png" alt="Logo StudyHub">
+      <span>StudyHub</span>
+    </a>
+    <nav>
+      <a href="/index.html">Accueil</a>
+      <a href="/resources.html">Ressources</a>
+      <a href="/forum.html">Forum</a>
+      <a href="/profile.html">Profil</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <h1>Forum d'entraide</h1>
+  <p>Pose une question claire, aide les autres, et vote pour les meilleures reponses.</p>
+</section>
+
+<section class="grid">
+  <div style="display:flex; flex-direction:column; gap:16px;">
+    <div class="card">
+      <h2>Nouveau post</h2>
+      <div class="form-row" style="margin-top:10px;">
+        <div>
+          <label class="small">Titre</label>
+          <input id="title" placeholder="Ex: Erreur 'npm install' sur Windows" />
+        </div>
+        <div>
+          <label class="small">Categorie</label>
+          <select id="category">
+            <option>Web</option>
+            <option>JavaScript</option>
+            <option>Linux</option>
+            <option>Reseau</option>
+            <option>BDD</option>
+            <option>Autre</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin-top:10px;">
+        <label class="small">Description</label>
+        <textarea id="body" placeholder="Contexte + ce que tu as deja essaye + message d'erreur..."></textarea>
+      </div>
+      <div class="row">
+        <button class="btn" id="submit">Publier</button>
+        <span class="small" id="status"></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Derniers posts</h2>
+      <div id="posts" style="display:flex; flex-direction:column; gap:10px; margin-top:10px;"></div>
+    </div>
+  </div>
+
+  <aside class="card">
+    <h2>Conseils</h2>
+    <ul class="list">
+      <li>Donne un titre precis et une categorie.</li>
+      <li>Ajoute le message d'erreur et ton OS.</li>
+      <li>Reste respectueux, et aide en retour.</li>
+    </ul>
+    <hr>
+    <div class="small">Le backend Node.js expose une API simple /api/posts.</div>
+  </aside>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2026 StudyHub - CampusConnect. Plateforme etudiante (maquette atelier EPSI).</div>
+  </div>
+</footer>
+
+<script src="/app.js"></script>
+<script src="/forum.js"></script>
+</body>
+</html>
